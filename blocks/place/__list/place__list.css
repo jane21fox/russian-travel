@@ -1,0 +1,21 @@
+.place__list {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 80px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .place__list  {
+        row-gap: 73px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .place__list  {
+        row-gap: 50px;
+    }
+}
